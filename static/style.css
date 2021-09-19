@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+
+:root {
+    /* Cores sombras (adobe) #F2F2F2 */
+    --cor0: #B3B3B3;
+    --cor1: #737373;
+    --cor3: #F2F2F2;
+    --cor4: #FFFFFF;
+    --cor5: #D9D9D9;
+    --cor6: #444444;
+
+    /* AdobeColor-Viagem */
+    --vcor0: #4A5B8C;
+    --vcor1: #8697A6;
+    --vcor2: #BFCDD9;
+    --vcor3: #BF8756;
+    --vcor4: #8C4F2B;
+
+    --font-header-h1: 'Nanum Brush Script', cursive;
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+/* config global */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor3);
+    font-family: var(--font-padrao);
+}
+
+
+header {
+    min-height: 120px;
+}
+
+
+header h1 {
+    font-family: var(--font-header-h1);
+    background-color: var(--vcor0);
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+}
+
+
+header p {
+    font-family: var(--font-padrao);
+    background-color: var(--vcor0);
+    text-align: center;
+    color: white;
+    padding-bottom: 40px;
+}
+
+
+
+nav {
+    background-color: var(--vcor1);
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: var(--cor4);
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+
+nav > a:hover {
+    background-color: var(--cor0);
+}
+
+
+main {
+    background-color: white;
+    min-width: 280px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 30px;
+    margin: 15px 0px 15px 0px;
+    line-height: 1.5em;
+}
+
+main h1 {
+    font-family: var(--font-padrao);
+    color: var(--vcor0);
+}
+
+main h2, h3, h4 {
+    color:var(--cor6);
+}
+
+main h2 {
+    font-size: 1.2em;
+}
+
+main h3 {
+    font-size: 1em;
+}
+
+main h4 {
+    font-size: 0.8em;
+}
+
+.pen::before {
+    content: "\1F58A";
+}
+
+.book::before {
+    content: "\1F4DA";
+}
+
+ul {
+    list-style-type: '\2714\00A0\00A0';  /*\2714 emoji \00A0 espaço*/
+    list-style-position: inside;
+}
+
+ul.duas-colunas {
+    columns: 2;
+}
+
+footer {
+    background-color: var(--vcor0);
+    text-align: center;
+    color: white;
+    font-family: var(--font-header-h1);
+    font-size: 2em;
+}
